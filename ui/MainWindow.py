@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '../ui/HelloWorld.ui'
+# Form implementation generated from reading ui file '../ui/MainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -16,9 +16,12 @@ class Ui_MainWindow(object):
         MainWindow.resize(597, 480)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(260, 210, 71, 16))
-        self.label.setObjectName("label")
+        self.helloLabel = QtWidgets.QLabel(self.centralwidget)
+        self.helloLabel.setGeometry(QtCore.QRect(260, 210, 71, 16))
+        self.helloLabel.setObjectName("helloLabel")
+        self.showLableButton = QtWidgets.QPushButton(self.centralwidget)
+        self.showLableButton.setGeometry(QtCore.QRect(240, 240, 113, 32))
+        self.showLableButton.setObjectName("showLableButton")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -27,4 +30,5 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Hello World"))
+        self.helloLabel.setText(_translate("MainWindow", "Hello World"))
+        self.showLableButton.setText(_translate("MainWindow", "Hidden"))
