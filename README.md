@@ -1,4 +1,4 @@
-# pyqt-scaffolding
+# pyqt-cli
 
 Quickly build QT program framework.
 
